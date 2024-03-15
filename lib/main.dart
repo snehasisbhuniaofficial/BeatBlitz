@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return const GetMaterialApp(
-      title: 'Online Music Player',
+      title: 'BeatBlitz',
       debugShowCheckedModeBanner: false,
       home: StartPage(),
     );
