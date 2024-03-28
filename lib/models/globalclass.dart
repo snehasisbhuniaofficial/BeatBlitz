@@ -1,8 +1,8 @@
 library ONLINE_MUSIC_PLAYER.globalclass;
 
 import 'dart:async';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:online_music_player/models/song_fetch.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 List<Song> songs = [];
 List<Song> search = [];

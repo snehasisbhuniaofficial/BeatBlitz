@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:just_audio_background/just_audio_background.dart';
 import 'package:online_music_player/pages/startpage.dart';
+import 'package:just_audio_background/just_audio_background.dart';
 
 late AudioPlayer player;
 

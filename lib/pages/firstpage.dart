@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:online_music_player/admin/admin_panel.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:online_music_player/pages/loginpage.dart';
 import 'package:online_music_player/pages/signuppage.dart';
-import 'package:awesome_dialog/awesome_dialog.dart';
+import 'package:online_music_player/admin/admin_panel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class FirstPage extends StatefulWidget {

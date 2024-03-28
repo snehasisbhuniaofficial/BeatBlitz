@@ -1,14 +1,13 @@
 import 'dart:async';
 import 'dart:convert';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:online_music_player/models/myurl.dart';
+import 'package:online_music_player/pages/loginpage.dart';
 import 'package:online_music_player/models/store_email.dart';
 import 'package:online_music_player/pages/loadingdialog.dart';
-import 'package:online_music_player/pages/loginpage.dart';
 
 // ignore: must_be_immutable
 class PasswordSet extends StatefulWidget {

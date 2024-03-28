@@ -1,17 +1,17 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/userdetails.dart';
 import 'package:online_music_player/pages/dashboard.dart';
-import 'package:online_music_player/pages/loadingdialog.dart';
 import 'package:online_music_player/pages/loginpage.dart';
 import 'package:online_music_player/pages/startpage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:online_music_player/models/userdetails.dart';
+import 'package:online_music_player/pages/loadingdialog.dart';
 import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 class SignUpPage extends StatefulWidget {

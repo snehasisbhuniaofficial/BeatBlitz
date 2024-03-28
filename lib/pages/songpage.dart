@@ -1,28 +1,28 @@
-import 'dart:async';
 import 'dart:io';
 import 'dart:math';
-import 'package:audio_session/audio_session.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_sliding_box/flutter_sliding_box.dart';
-import 'package:online_music_player/main.dart';
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
-import 'package:http/http.dart' as http;
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:just_audio/just_audio.dart';
-import 'package:just_audio_background/just_audio_background.dart';
-import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/notification.dart';
-import 'package:online_music_player/models/song_fetch.dart';
-import 'package:online_music_player/pages/common.dart';
-import 'package:online_music_player/pages/homepage.dart';
-import 'package:online_music_player/pages/loadingdialog.dart';
-import 'package:online_music_player/pages/neu_box.dart';
-import 'package:readmore/readmore.dart';
+import 'dart:async';
 import 'package:rxdart/rxdart.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:readmore/readmore.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:online_music_player/main.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:audio_session/audio_session.dart';
+import 'package:online_music_player/models/myurl.dart';
+import 'package:online_music_player/pages/common.dart';
+import 'package:online_music_player/pages/neu_box.dart';
+import 'package:online_music_player/pages/homepage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:online_music_player/models/song_fetch.dart';
+import 'package:online_music_player/models/notification.dart';
+import 'package:flutter_sliding_box/flutter_sliding_box.dart';
+import 'package:online_music_player/pages/loadingdialog.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:just_audio_background/just_audio_background.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 // ignore: must_be_immutable
 class SongPage extends StatefulWidget {

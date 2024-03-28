@@ -1,13 +1,13 @@
 import 'dart:convert';
-import 'package:email_otp/email_otp.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
+import 'package:email_otp/email_otp.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:online_music_player/pages/otp.dart';
 import 'package:online_music_player/models/myurl.dart';
 import 'package:online_music_player/models/store_email.dart';
 import 'package:online_music_player/pages/loadingdialog.dart';
-import 'package:online_music_player/pages/otp.dart';
 
 class ForgetPass extends StatefulWidget {
   const ForgetPass({super.key});
@@ -137,7 +137,9 @@ class _ForgetPassState extends State<ForgetPass> {
                         child: Text(
                           'Send Verification Code',
                           style: TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
                         ),
                       ),
                       style: ButtonStyle(

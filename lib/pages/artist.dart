@@ -1,14 +1,14 @@
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:online_music_player/main.dart';
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
-import 'package:just_audio_background/just_audio_background.dart';
 import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/song_fetch.dart';
 import 'package:online_music_player/pages/homepage.dart';
 import 'package:online_music_player/pages/songpage.dart';
+import 'package:online_music_player/models/song_fetch.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:just_audio_background/just_audio_background.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 // ignore: must_be_immutable
 class Artist extends StatefulWidget {

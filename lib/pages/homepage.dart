@@ -1,20 +1,20 @@
 import 'dart:async';
 import 'dart:convert';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:circular_profile_avatar/circular_profile_avatar.dart';
-import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
-import 'package:online_music_player/main.dart';
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'package:just_audio/just_audio.dart';
-import 'package:just_audio_background/just_audio_background.dart';
+import 'package:online_music_player/main.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/song_fetch.dart';
 import 'package:online_music_player/pages/artist.dart';
 import 'package:online_music_player/pages/songpage.dart';
+import 'package:online_music_player/models/song_fetch.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:just_audio_background/just_audio_background.dart';
+import 'package:circular_profile_avatar/circular_profile_avatar.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -47,15 +47,15 @@ class HomePageState extends State<HomePage> with WidgetsBindingObserver {
       WidgetsBinding.instance.removeObserver(this);
       super.dispose();
     }
+
     super.initState();
-    
 
     SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       statusBarColor: Colors.black,
     ));
   }
 
-   @override
+  @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.detached) player.pause();
     super.didChangeAppLifecycleState(state);

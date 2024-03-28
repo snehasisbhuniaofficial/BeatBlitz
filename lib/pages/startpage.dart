@@ -1,13 +1,13 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:online_music_player/admin/admin_panel.dart';
 import 'package:online_music_player/main.dart';
-import 'package:online_music_player/models/userdetails.dart';
-import 'package:online_music_player/pages/dashboard.dart';
 import 'package:online_music_player/pages/firstpage.dart';
+import 'package:online_music_player/pages/dashboard.dart';
+import 'package:online_music_player/admin/admin_panel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:online_music_player/models/userdetails.dart';
 import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 class StartPage extends StatefulWidget {

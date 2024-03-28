@@ -1,24 +1,24 @@
+import 'dart:ui';
+import 'dart:io';
 import 'dart:async';
 import 'dart:convert';
-import 'dart:io';
-import 'dart:ui';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:online_music_player/main.dart';
-import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/userdetails.dart';
-import 'package:online_music_player/pages/dashboard.dart';
-import 'package:online_music_player/pages/loadingdialog.dart';
-import 'package:online_music_player/pages/password/verify.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
+import 'package:online_music_player/main.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:online_music_player/models/myurl.dart';
 import 'package:online_music_player/pages/songpage.dart';
 import 'package:online_music_player/pages/startpage.dart';
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
+import 'package:online_music_player/pages/dashboard.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:online_music_player/models/userdetails.dart';
+import 'package:online_music_player/pages/loadingdialog.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:online_music_player/pages/password/verify.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 // ignore: must_be_immutable
 class ProfilePage extends StatefulWidget {

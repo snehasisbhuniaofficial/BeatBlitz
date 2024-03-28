@@ -1,10 +1,10 @@
-import 'dart:async';
 import 'dart:math';
+import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:speech_to_text/speech_to_text.dart' as stt;
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
 import 'package:speech_to_text/speech_to_text.dart';
+import 'package:speech_to_text/speech_to_text.dart' as stt;
+import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 class Voice extends StatefulWidget {
   const Voice({super.key});

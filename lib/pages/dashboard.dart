@@ -1,17 +1,17 @@
 import 'dart:async';
-import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:online_music_player/main.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:online_music_player/models/myurl.dart';
-import 'package:online_music_player/models/userdetails.dart';
-import 'package:online_music_player/pages/homepage.dart';
-import 'package:online_music_player/pages/profilepage.dart';
-import 'package:online_music_player/models/globalclass.dart' as globalclass;
-import 'package:online_music_player/pages/searchpage.dart';
 import 'package:online_music_player/pages/songpage.dart';
+import 'package:online_music_player/pages/homepage.dart';
+import 'package:online_music_player/pages/searchpage.dart';
+import 'package:online_music_player/pages/profilepage.dart';
+import 'package:online_music_player/models/userdetails.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:online_music_player/models/globalclass.dart' as globalclass;
 
 // ignore: must_be_immutable
 class DashBoard extends StatefulWidget {
