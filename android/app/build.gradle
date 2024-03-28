@@ -31,7 +31,7 @@ if (keystorePropertiesFile.exists()) {
 
 
 android {
-    namespace "com.example.online_music_player"
+    namespace "com.snehasis.online_music_player"
     compileSdkVersion 33
     ndkVersion "25.1.8937393"
 
