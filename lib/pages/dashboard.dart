@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:just_audio/just_audio.dart';
@@ -32,45 +30,9 @@ class DashBoardState extends State<DashBoard> {
 
   bool isplayervisible = false;
 
-  late StreamSubscription<ConnectivityResult> subscription;
-  String connectionStatus = 'Unknown';
-
-  startMonitoringConnectivity() {
-    subscription = Connectivity()
-        .onConnectivityChanged
-        .listen((ConnectivityResult result) {
-      setState(() {
-        if (result == ConnectivityResult.none) {
-          connectionStatus = 'No Internet Connection';
-          Fluttertoast.showToast(msg: connectionStatus);
-        } else if (result == ConnectivityResult.wifi) {
-          connectionStatus = 'Connected to Wi-Fi';
-          Fluttertoast.showToast(msg: connectionStatus);
-        } else if (result == ConnectivityResult.mobile) {
-          connectionStatus = 'Connected to Mobile Data';
-          Fluttertoast.showToast(msg: connectionStatus);
-        }
-      });
-    });
-    return connectionStatus;
-  }
-
-  void stopMonitoringConnectivity() {
-    subscription.cancel();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    subscription.cancel();
-  }
-
   @override
   void initState() {
     super.initState();
-    setState(() {
-      startMonitoringConnectivity();
-    });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       // do something
       controller.listen((event) {
@@ -104,75 +66,6 @@ class DashBoardState extends State<DashBoard> {
               ),
             ),
           ),
-          // actions: [
-          //   Center(
-          //     child: FittedBox(
-          //       child: Center(
-          //         child: Padding(
-          //           padding: const EdgeInsets.all(20),
-          //           child: Container(
-          //             decoration: BoxDecoration(
-          //                 color: Colors.black,
-          //                 borderRadius: BorderRadius.circular(25)),
-          //             child: TextButton.icon(
-          //                 onPressed: () {
-          //                   if (SongPageState.isPlayerInitialized == false) {
-          //                     setState(() {
-          //                       if (globalclass.controller1.isClosed) {
-          //                         globalclass.controller1 =
-          //                             StreamController<bool>.broadcast();
-          //                       }
-          //                     });
-          //                     Navigator.of(context).push(MaterialPageRoute(
-          //                         builder: (context) => OfflineMusic(
-          //                             globalclass.controller1.stream)));
-          //                   } else {
-          //                     AwesomeDialog(
-          //                       context: context,
-          //                       animType: AnimType.bottomSlide,
-          //                       dismissOnTouchOutside: false,
-          //                       btnCancelColor: Colors.grey,
-          //                       dialogType: DialogType.warning,
-          //                       btnOkColor: Colors.red,
-          //                       title: 'Alert Infomation',
-          //                       desc:
-          //                           'Your Online Music Streaming is On!\nDo You Want to Close the Online Music Streaming?',
-          //                       btnOkOnPress: () {
-          //                         setState(() {
-          //                           player.stop();
-
-          //                           SongPageState.isPlayerInitialized = false;
-          //                           globalclass.controller.add(false);
-
-          //                           if (globalclass.controller1.isClosed) {
-          //                             globalclass.controller1 =
-          //                                 StreamController<bool>.broadcast();
-          //                           }
-          //                         });
-          //                         Navigator.of(context).push(MaterialPageRoute(
-          //                             builder: (context) => OfflineMusic(
-          //                                 globalclass.controller1.stream)));
-          //                       },
-          //                       btnCancelOnPress: () {},
-          //                     ).show();
-          //                   }
-          //                 },
-          //                 label: const Text(
-          //                   "Offline Music",
-          //                   style: TextStyle(
-          //                       color: Colors.white,
-          //                       fontWeight: FontWeight.normal),
-          //                 ),
-          //                 icon: const Icon(
-          //                   Icons.music_note_rounded,
-          //                   color: Colors.white,
-          //                 )),
-          //           ),
-          //         ),
-          //       ),
-          //     ),
-          //   )
-          // ],
         ),
         body: Obx(() => bottomController.selectedIndex > 1
             ? ProfilePage(user)
