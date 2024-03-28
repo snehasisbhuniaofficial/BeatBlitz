@@ -185,6 +185,8 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (title.text.isEmpty) {
                               return 'Required';
+                            } else {
+                              return null;
                             }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -207,6 +209,9 @@ class _AdminPanelState extends State<AdminPanel> {
                             if (singer.text == '') {
                               return 'Required';
                             }
+                            else {
+                              return null;
+                            }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           keyboardType: TextInputType.text,
@@ -227,6 +232,9 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (genre.text == '') {
                               return 'Required';
+                            }
+                            else {
+                              return null;
                             }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -249,6 +257,9 @@ class _AdminPanelState extends State<AdminPanel> {
                             if (duration.text == '') {
                               return 'Required';
                             }
+                            else {
+                              return null;
+                            }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           keyboardType: TextInputType.number,
@@ -270,6 +281,9 @@ class _AdminPanelState extends State<AdminPanel> {
                             if (fileformat.text == '') {
                               return 'Required';
                             }
+                            else {
+                              return null;
+                            }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           controller: fileformat,
@@ -289,6 +303,9 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (value == '') {
                               return 'Required';
+                            }
+                            else {
+                              return null;
                             }
                           },
                           controller: image,
@@ -317,6 +334,9 @@ class _AdminPanelState extends State<AdminPanel> {
                             if (lyrics.text == '') {
                               return 'Required';
                             }
+                            else {
+                              return null;
+                            }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                           controller: lyrics,
@@ -336,6 +356,9 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (value == '') {
                               return 'Required';
+                            }
+                            else {
+                              return null;
                             }
                           },
                           autovalidateMode: AutovalidateMode.onUserInteraction,
