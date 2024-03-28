@@ -10,6 +10,7 @@ import 'package:http/http.dart' as http;
 import 'package:online_music_player/pages/startpage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+// ignore: must_be_immutable
 class PassChange extends StatefulWidget {
   User user;
   PassChange(this.user);

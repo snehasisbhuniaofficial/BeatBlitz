@@ -208,8 +208,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (singer.text == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -232,8 +231,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (genre.text == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -256,8 +254,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (duration.text == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -280,8 +277,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (fileformat.text == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -303,8 +299,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (value == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -333,8 +328,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (lyrics.text == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },
@@ -356,8 +350,7 @@ class _AdminPanelState extends State<AdminPanel> {
                           validator: (value) {
                             if (value == '') {
                               return 'Required';
-                            }
-                            else {
+                            } else {
                               return null;
                             }
                           },

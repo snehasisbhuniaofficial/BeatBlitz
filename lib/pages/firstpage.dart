@@ -104,6 +104,8 @@ class _FirstPageState extends State<FirstPage> {
                                         validator: (value) {
                                           if (value == '') {
                                             return 'Id Required';
+                                          } else {
+                                            return null;
                                           }
                                         },
                                       );

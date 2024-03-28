@@ -15,6 +15,7 @@ import 'package:online_music_player/models/globalclass.dart' as globalclass;
 import 'package:online_music_player/pages/searchpage.dart';
 import 'package:online_music_player/pages/songpage.dart';
 
+// ignore: must_be_immutable
 class DashBoard extends StatefulWidget {
   User user;
   late Stream<bool> controller;

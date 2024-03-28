@@ -108,6 +108,7 @@ class SongPageState extends State<SongPage> with WidgetsBindingObserver {
           player.play();
         });
       });
+    // ignore: unused_catch_stack
     } catch (e, stackTrace) {
       // Catch load errors: 404, invalid url ...
       print("Error loading playlist: $e");

@@ -8,6 +8,7 @@ import 'package:online_music_player/pages/password/passchange.dart';
 import 'package:otp_timer_button/otp_timer_button.dart';
 import 'package:pinput/pinput.dart';
 
+// ignore: must_be_immutable
 class OtpVerify extends StatefulWidget {
   User user;
   OtpVerify(this.user);

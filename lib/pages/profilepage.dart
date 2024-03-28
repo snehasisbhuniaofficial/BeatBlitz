@@ -20,6 +20,7 @@ import 'package:online_music_player/pages/startpage.dart';
 import 'package:online_music_player/models/globalclass.dart' as globalclass;
 import 'package:shared_preferences/shared_preferences.dart';
 
+// ignore: must_be_immutable
 class ProfilePage extends StatefulWidget {
   User user;
   ProfilePage(this.user);

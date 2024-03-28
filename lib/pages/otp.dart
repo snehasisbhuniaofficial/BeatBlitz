@@ -8,6 +8,7 @@ import 'package:online_music_player/pages/passwordset.dart';
 import 'package:otp_timer_button/otp_timer_button.dart';
 import 'package:pinput/pinput.dart';
 
+// ignore: must_be_immutable
 class OtpScreen extends StatefulWidget {
   Email email;
   OtpScreen(this.email);
